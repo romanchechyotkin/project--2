@@ -77,8 +77,15 @@ a {
   background-color: #d2e1ff;
 }
 
+.diff-bgcolor {
+  background: linear-gradient(180deg, #f4f7ff 0%, #f1f5ff 100%);
+}
+
 .introduce {
-  background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
+  background-image: url("../img/chart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: 'Roboto';
   padding-top: 92px;
   padding-bottom: 232px;
@@ -123,11 +130,29 @@ a {
 }
 
 .introduce-btn {
-  border-radius: 50%;
-  width: 52px;
   height: 52px;
-  padding: 21px 20px 20px 22px;
+  width: 52px;
+  border-radius: 50%;
+  padding: 21px;
   background-color: #fff;
-  box-shadow: 0px 10px 50px rgba(201, 209, 231, 0.6);
+  box-shadow: 0px 10px 50px rgba(201, 209, 231, 0.9);
+}
+
+.logos {
+  height: 145px;
+  padding: 61px 0;
+  border-top: 1px solid #d8e3fe;
+  border-bottom: 1px solid #d8e3fe;
+}
+
+.logos-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.management {
+  padding-top: 208px;
+  padding-bottom: 216px;
 }
 /*# sourceMappingURL=style.css.map */
