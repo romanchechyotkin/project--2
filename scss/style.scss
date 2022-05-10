@@ -36,8 +36,20 @@ button{
     background-color: transparent;
     padding: 0;
     margin: 0;
+    cursor: pointer;
 }
 
+.footer{
+    height: 287px;
+    padding: 101px 0 93px;
+    border-bottom: none;
+
+    &-descr{
+        margin-top: 42px;
+    }
+}
+
+.footer,
 .header{
     
     font-weight: 500;
@@ -242,18 +254,194 @@ button{
 }
 
 .stats{
-    padding: 66px 0;
-
-    &-inner{
-        display: flex;
+    
+    display: flex;
+    justify-content: center;
+    
+    &-item{
+        flex: 0 0 50%;
     }
 
     .darkblue{
+        padding: 66px 90px;
         background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
         text-align: right;
+
+        .stats-title{
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 83px;
+            text-align: right;
+            letter-spacing: 0.03em;
+            color: #fff;
+            margin: 0;
+            margin-bottom: 36px;
+        }
+
+        .stats-descr{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+            text-align: right;
+            letter-spacing: 0.03em;
+            color: #fff;   
+        }
     }
     .lightblue{
+        width: 100%;
+        padding-top: 70px;
+        padding-bottom: 66px;
+        padding-left: 90px;
         background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
         text-align: left;
+
+        .stats-title{
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 83px;
+            letter-spacing: 0.03em;
+            color: #5E80FF;
+            margin: 0;
+            margin-bottom: 37px;
+        }
+
+        .stats-descr{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+            letter-spacing: 0.03em;
+            color: #5E80FF;  
+        }
+    }
+}
+
+.bg{
+    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+}
+.getstarted{
+    padding: 91px 0;
+    text-align: center;
+    background-image: url('../img/clouds.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &-descr{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 16px;
+    }
+
+    &-title{
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 60px;
+        color: #FFFFFF;
+        margin: 0;
+        margin-bottom: 28px;
+        span{
+
+            font-weight: 500;
+        }
+    }
+
+    &-text{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #fff;
+        margin-bottom: 28px;
+    }
+
+    &-btn1{
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        color: #565F82;
+        padding: 13px 17px;
+        background: #FFFFFF;
+        box-shadow: 0px 5px 15px #6480E8;
+    }
+
+    &-btn2{
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #C7D3FF;
+        padding: 13px 9px;
+        border: 1px solid #A0B4FF;
+    }
+}
+
+.news{
+    padding: 119px;
+    background: #FCFDFF;
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    &-text-box{
+        width: 330px;
+    }
+
+    &-title{
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #3D4F9F;
+    }
+
+    &-text{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 27px;
+        letter-spacing: 0.03em;
+        color: #8D96BD;
+    }
+
+    &-btn1{
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        color: #7A85AD;
+        background: #EFEFF7;
+        border-radius: 5px;
+        padding: 21px 168px 21px 23px;
+        margin-right: 14px;
+    }
+    &-btn2{
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        color: #fff;
+        background: #4D6CE1;
+        box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2);
+        border-radius: 5px;
+        padding: 22px 62px 20px;
     }
 }
