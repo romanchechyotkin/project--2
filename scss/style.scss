@@ -31,6 +31,13 @@ a{
     text-decoration: none;
 }
 
+button{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
 .header{
     
     font-weight: 500;
@@ -153,8 +160,100 @@ a{
     }
 }
 
-.management{
-    padding-top: 208px;
-    padding-bottom: 216px;
-    
+.features{
+    padding: 171px 0;
+    text-align: center;
+    &-descr{
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #3d4f9f;
+        margin-bottom: 20px;
+    }
+
+    &-title{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #3d4f9f;
+        margin-bottom: 92px;
+    }
+
+    &-box{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 92px;
+    }
+
+    &-item{
+        width: 140px;
+    }
+
+    &-icon{
+        margin-bottom: 33px;
+    }
+
+    .box-title{
+        margin-bottom: 25px;
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+        color: #4074f8;
+    }
+
+    .box-descr{
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 19px;
+        text-align: center;
+        color: #adb3cb;
+    }
+
+    &-btn1{
+        padding: 13px 15px 16px;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        color: #d43f3f;
+        background: #FFD7D7;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 111px;
+    }
+
+    &-btn2{
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        color: #3A79FF;
+        padding: 13px 15px 16px;      
+        background: #D2E1FF;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+}
+
+.stats{
+    padding: 66px 0;
+
+    &-inner{
+        display: flex;
+    }
+
+    .darkblue{
+        background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+        text-align: right;
+    }
+    .lightblue{
+        background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+        text-align: left;
+    }
 }
